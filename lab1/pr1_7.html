@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <form name="student">
+        <h1>Уважаемые абитуриенты! <br />Заполните форму</h1>
+
+        <p>Фамилия <br />
+        <input type="text" surname="Фамилия" size="15" maxlength="30" required/>
+        <p>Имя<br />
+        <input type="text" name="Имя" size="15" maxlength="30" required/>
+        <p>Отчество<br />
+        <input type="text" secondname="Отчество" size="15" maxlength="30" required/>
+
+        <p></p>
+        <fieldset>
+            <legend>Выберете сданные экзамены</legend>
+            <input type="checkbox" name="EGE" value="russian" checked="checked" />Русский язык
+            <input type="checkbox" name="EGE" value="pro_math" />Профильная математика
+            <input type="checkbox" name="EGE" value="base_math" />Базовая математика
+            <input type="checkbox" name="EGE" value="english" />Английский язык
+            <input type="checkbox" name="EGE" value="history" />История
+            <input type="checkbox" name="EGE" value="so_science" />Обществознание
+            <input type="checkbox" name="EGE" value="physics" />Физика
+            <input type="checkbox" name="EGE" value="informatics" />Информатика    
+        </fieldset>
+    
+        <p>Общее количество баллов<br />
+        <input type="text" score="Общее количество баллов" size="15" maxlength="30" required/>
+ 
+        <fieldset>
+            <legend>Готовность учиться на вступительных экзаменах</legend>
+            <input type="radio" name="YN" value="yes" checked="checked" />да
+            <input type="radio" name="YN" value="no" />нет
+        </fieldset>
+
+        <p></p>
+        <input type="submit" value="Отправить данные">
+        <p></p>
+        <input type="reset" value="Очистить все поля">
+    </form>
+    
+</body>
+</html>
